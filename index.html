@@ -22,33 +22,61 @@
         </nav>
         <div class="hero-content">
             <div class="profile-photo">
-                <img src="https://via.placeholder.com/150" alt="Ma photo de profil">
+                <img src="Image/photo de profil.jpg" alt="Ma photo de profil">
             </div>
-            <h1>Maxime Bardeau</h1>
-            <p>Back-end Developper</p>
+            <div class="profile-text">
+                <h1>Maxime Bardeau</h1>
+                <p>Back-end Developper</p>
+            </div>
         </div>
     </header>
 
     <main>
         <section id="projets" class="projects-section">
             <h2>Projets</h2>
+            <div class="filters">
+                <span class="tag active" data-tag="all">Tout</span>
+                <span class="tag" data-tag="python">Python</span>
+                <span class="tag" data-tag="javascript">JavaScript</span>
+                <span class="tag" data-tag="java">Java</span>
+                <span class="tag" data-tag="php">Php</span>
+                <span class="tag" data-tag="bdd">BDD</span>
+            </div>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-tags="python,javascript">
                     <img src="Image/Krono - Banniere.png" alt="Banniere Krono">
                     <h3>Krono - Screen Time Analytics</h3>
                     <p>Cross-platform application for tracking and analyzing time spent on apps and games,
                          with social and gamified features.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-tags="python">
                     <img src="Image/The Tower Bot - Banniere.png" alt="Banniere Bot">
                     <h3>Programme de jeu automatique</h3>
-                    <p>Brève description du projet, des technologies utilisées, et du problème qu'il résout.</p>
+                    <p>This is an autonomous program that plays the mobile game "The Tower - Tower Defense Idle." 
+                        The bot is designed to play automatically based on a given gameplay.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                    </div>
                 </div>
                 
                 <div class="project-card">
                     <img src="https://via.placeholder.com/300x200" alt="Image du projet 3">
                     <h3>Nom du Projet 3</h3>
+                    <p>Brève description du projet, des technologies utilisées, et du problème qu'il résout.</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Image du projet 4">
+                    <h3>Nom du Projet 4</h3>
+                    <p>Brève description du projet, des technologies utilisées, et du problème qu'il résout.</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Image du projet 5">
+                    <h3>Nom du Projet 5</h3>
                     <p>Brève description du projet, des technologies utilisées, et du problème qu'il résout.</p>
                 </div>
             </div>
@@ -67,6 +95,6 @@
             </div>
         <p>&copy; 2024 Maxime Bardeau. Tous droits réservés.</p>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>

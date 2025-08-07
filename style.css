@@ -65,9 +65,11 @@ h1, h2 {
 
 .hero-content {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    gap: 30px;
     margin-top: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .profile-photo img {
@@ -91,7 +93,7 @@ h1, h2 {
 /* --- Section des projets --- */
 main {
     padding: 40px 20px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -163,6 +165,48 @@ main {
 
 .social-links a {
     margin: 0 10px;
+}
+
+/* --- Style des tags de filtre --- */
+.filters {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filters .tag {
+    cursor: pointer;
+    background-color: var(--card-bg-color);
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin: 0 5px;
+    font-size: 0.9rem;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filters .tag:hover, .filters .tag.active {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+/* --- Style des tags dans les cartes de projets --- */
+.project-tags {
+    padding: 0 15px 15px;
+}
+
+.project-tags .tag {
+    background-color: #333;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+/* Règle pour masquer les cartes qui ne correspondent pas au filtre */
+.project-card.hidden {
+    display: none;
 }
 
 /* --- Media Queries pour le responsive --- */
